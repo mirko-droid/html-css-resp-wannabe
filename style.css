@@ -50,7 +50,7 @@
 #why .row img {
   background-color: #428bca;
   border-radius: 50%;
-  padding: 30px
+  padding: 30px; /*qui mancava chiusura ';' */
 }
 
 /* COMMON */
@@ -69,7 +69,7 @@ img {
 }
 
 .clear {
-  clear: both;
+  clear: both; /*a cosa serve non c'è in html una classe con questo nome????????*/
 }
 
 /* <420px */
@@ -89,16 +89,31 @@ img {
     margin: 40px auto;
   }
   /* BLOCCO LEZIONI */
+  /* BLOCCO STEPS */
+
   #lezioni .row>.left,
   #lezioni .row>.right,
     #steps .row>.left,
     #steps .row>.central,
     #steps .row>.right {
     width: 100%;
-    margin: 30px auto;
+    margin: 40px auto;
+  }
+  /* BLOCCO PERCHE */
+  #why .row>.first,
+  #why .row>.second,
+  #why .row>.third {
+    width: 100%;
+    margin: 40px 0;
   }
 
-
+  #why .row img {
+    background-color: lightgreen;
+    padding: 30px;
+  }
+  hr{
+    margin-top: 40px;
+  }
   img{
     height: 100px;
   }
